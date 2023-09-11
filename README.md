@@ -1,6 +1,7 @@
 # EchoLabeler
 
 Set of classes to perform label extraction training/inference based on echocardiograms.
+
 **Span labeling**
 * Direct concept lookup
 * MedCAT + biLSTM
