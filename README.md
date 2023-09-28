@@ -4,6 +4,8 @@ Set of classes to perform label extraction training/inference based on echocardi
 
 **Span labeling**
 * Direct concept lookup
+  * Embeddings in lookup table
+  * NN-search
 * MedCAT + biLSTM
 * MedCAT + Transformer
 * Spacy SpanCat
