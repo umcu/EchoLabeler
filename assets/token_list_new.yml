@@ -22,8 +22,7 @@ la:
      - "la en ra zijn niet gedilateerd"
      - "atria zijn niet gedilateerd"
      - "normale dimensie van beide atria"
-     - "atria niet gedilateerd"
-           
+     - "atria niet gedilateerd"     
     dilatation:
         mild:
          - "visueel geringe linker atrium dilatatie"            
