@@ -1,0 +1,10 @@
+{"label": "pe_severe", "pattern": [{"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_severe", "pattern": [{"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"TEXT": {"REGEX": "[Ss]poor"}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"TEXT": {"REGEX": "[Ss]poor"}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {"TEXT": {"REGEX": "aanwijz"}}, {}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {"TEXT": {"REGEX": "aanwijz"}}, {}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}

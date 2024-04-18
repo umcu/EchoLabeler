@@ -1,0 +1,79 @@
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "hyperdynamische"}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {"LOWER": "niet"}, {"LOWER": "gedilateerd"}, {"LOWER": "met"}, {"LOWER": "hyperdynamische"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {"LOWER": "niet"}, {"LOWER": "gedilateerd"}, {"LOWER": "met"}, {}, {"LOWER": "hyperdynamische"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_normal", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "([Nn]ormale|[Gg]oede?)"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_mild", "pattern": [{"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_mild", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "[Rr]edelijke?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atige?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_moderate", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "[Mm]atige?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {}, {}, {"LOWER": "rv"}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {}, {"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_severe", "pattern": [{"TEXT": {"REGEX": "[Ss]lechte?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}, {}, {"LOWER": "rv"}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
+{"label": "rv_sys_func_severe", "pattern": [{"LOWER": "rv"}, {}, {}, {}, {}, {"TEXT": {"REGEX": "[Ss]lechte?"}}, {}, {"TEXT": {"REGEX": "([Rr][Vv][Ff]|fu(nc|cn)tie)"}}]}
