@@ -1,0 +1,24 @@
+cnn:
+  diastolic_dysfunction:
+    embedding_dim: 128
+    max_len: 200
+    num_words_in_vocab: 10_000
+    num_epochs: 40
+    num_folds: 10
+    batch_size: 128
+    UseClassWeights: False
+    LR: 0.0025
+    dilation: 4
+    best_epoch: 11
+  wma:
+    embedding_dim: 128
+    max_len: 200
+    num_words_in_vocab: 5_000
+    num_epochs: 50
+    num_folds: 10
+    batch_size: 128
+    UseClassWeights: False
+    LR: 0.0005
+    dilation: 2
+    best_epoch:
+
