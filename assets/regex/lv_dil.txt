@@ -1,42 +1,101 @@
-{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat"}}, {"TEXT": {"REGEX": "linker"}}, {"TEXT": {"REGEX": "ventrikel"}}]}
-{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {"TEXT": {"REGEX": "(ernstig|sterk|fors)"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {}, {"TEXT": {"REGEX": "(ernstig|sterk|fors)"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {"TEXT": {"REGEX": "(ernstig|sterk|fors)"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat"}}, {"TEXT": {"REGEX": "linker"}}, {"TEXT": {"REGEX": "ventrikel"}}]}
-{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {"TEXT": {"REGEX": "matig"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {}, {"TEXT": {"REGEX": "matig"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {"TEXT": {"REGEX": "matig"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild)"}}, {"TEXT": {"REGEX": "dilat"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild)"}}, {"TEXT": {"REGEX": "dilat"}}, {"TEXT": {"REGEX": "linker"}}, {"TEXT": {"REGEX": "ventrikel"}}]}
-{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild)"}}, {"TEXT": {"REGEX": "dilat"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild)"}}, {"TEXT": {"REGEX": "dilat"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {"TEXT": {"REGEX": "(licht|gering|mild)"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {}, {"TEXT": {"REGEX": "(licht|gering|mild)"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {"TEXT": {"REGEX": "(licht|gering|mild)"}}, {"TEXT": {"REGEX": "dilat"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {}, {}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {}, {}, {}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "([Ee]rnstig|[Ss]terk|[Ff]ors)"}}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "(ernstig|sterk|fors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {}, {"TEXT": {"REGEX": "(ernstig|sterk|fors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {"TEXT": {"REGEX": "(ernstig|sterk|fors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_severe", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {"TEXT": {"REGEX": "(ernstig|sterk|fors)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "[Mm]atig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "matig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {}, {"TEXT": {"REGEX": "matig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {"TEXT": {"REGEX": "matig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_moderate", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {"TEXT": {"REGEX": "matig"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "([Ll]icht|[Gg]ering|[Mm]ild|[Mm]argina|[Bb]orderline)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "(licht|gering|mild)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {}, {"TEXT": {"REGEX": "(licht|gering|mild)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {"TEXT": {"REGEX": "(licht|gering|mild)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_mild", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {"TEXT": {"REGEX": "(licht|gering|mild)"}}, {"TEXT": {"REGEX": "dilat|dialt|verwijd|vergro"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {}, {}, {}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {}, {"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {}, {"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {}, {}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {}, {}, {}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
 {"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
 {"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "[Nn]iet-gedilateerde"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}, {}, {}, {"TEXT": {"REGEX": "[Nn]orma(le?|al)"}}, {"TEXT": {"REGEX": "[Gg]rootte"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "[Nn]iet-gedilateerde"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {}, {}, {"TEXT": {"REGEX": "[Nn]orma(le?|al)"}}, {"TEXT": {"REGEX": "[Gg]rootte"}}]}
 {"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}, {}, {}, {"TEXT": {"REGEX": "[Nn]orma(le?|al)"}}, {"TEXT": {"REGEX": "[Gg]rootte"}}]}
 {"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {"TEXT": {"REGEX": "alle|beide"}}, {"TEXT": {"REGEX": "compartimenten|ventrikels"}}]}
 {"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]iet|[Gg]een|[Nn]orma(le?|al))"}}, {"TEXT": {"REGEX": "dilat|dimensie|vergroo?t|diameters?"}}, {"TEXT": {"REGEX": "zonder"}}, {"TEXT": {"REGEX": "wandbewegingsstoornissen"}}]}
-{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "[Nn]ormale"}}, {"TEXT": {"REGEX": "[Dd]imensies?"}}, {"TEXT": {"REGEX": "\\.|\\,|ventrikels"}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "[Nn]ormale"}}, {"TEXT": {"REGEX": "[Dd]imensies\\."}}]}
+{"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "[Nn]ormale"}}, {"TEXT": {"REGEX": "[Dd]imensies"}},  {"TEXT": {"REGEX": "^\\.|\\,|ventrikels$"}}]}
 {"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "[Nn]ormale"}}, {"TEXT": {"REGEX": "[Dd]imensies?"}}, {"TEXT": {"REGEX": "atria"}}, {"TEXT": {"REGEX": "en"}}, {"TEXT": {"REGEX": "ventrikels"}}]}
 {"label": "lv_dil_normal", "pattern": [{"TEXT": {"REGEX": "[Nn]ormale"}}, {"TEXT": {"REGEX": "ventrikel"}}, {"TEXT": {"REGEX": "dimensies|afmeting(en)?"}}]}
-{"label": "lv_dil_present", "pattern": [{"TEXT": {"REGEX": "^(Gedilat(at)?eerde?|Dilatatie)"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]"}}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"TEXT": {"REGEX": "dimensie"}}, {"LOWER": "en"}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer|caviteiten"}}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"TEXT": {"REGEX": "dimensie"}}, {"LOWER": "en"}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^[Ll]inker"}}, {"TEXT": {"REGEX": "^[Vv]entr"}}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"TEXT": {"REGEX": "dimensie"}}, {"LOWER": "van"}, {"LOWER": "de"}, {"LOWER": "ventrikels"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "linkszijdige"}, {"LOWER": "dimensies"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "linkszijdige"}, {"LOWER": "diameters"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "diameters"}, {"LOWER": "hartcompartimenten"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "dimensies"}, {"LOWER": "alle"}, {"LOWER": "compartimenten"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "dimensies"}, {"LOWER": "van"}, {"LOWER": "alle"}, {"LOWER": "compartimenten"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "lv"}, {"LOWER": "van"}, {"LOWER": "normale"}, {"LOWER": "omvang"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "lv"}, {"LOWER": "oogt"}, {"LOWER": "normaal"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "dimesies"}, {"LOWER": "alle"}, {"LOWER": "compartimenten"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "dimensie"}, {"LOWER": "lv"}, {"LOWER": "normaal"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "kleine"}, {"LOWER": "lv"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "kleine"}, {"LOWER": "l.v"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "dimensies"}, {"LOWER": "bovengrens"}, {"LOWER": "normaal"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "echo"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normaal"}, {"LOWER": "echocardiogram"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "echocardiogram"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normaal"}, {"LOWER": "echo"}, {"LOWER": "cardiogram"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "overig"}, {"LOWER": "normale"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "overig"}, {"LOWER": "geen"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "echo"}, {"LOWER": "geen"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "overige"}, {"LOWER": "bevindingen"}, {"LOWER": "normaal"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "overige"}, {"LOWER": "bevindingen"}, {"LOWER": "zijn"}, {"LOWER": "normaal"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "overige"}, {"LOWER": "dimensies"}, {"LOWER": "en"}, {"LOWER": "functies"}, {"LOWER": "normaal"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "duidelijke"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "evidente"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "functionele"}, {"LOWER": "beperkingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "normale"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "geen"}, {"LOWER": "afwijkende"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "geen"}, {"LOWER": "abnormale"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "geen"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "echocardiografische"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "cardiale"}, {"LOWER": "afwijkingen"}, {"LOWER": "gezien"}, {"LOWER": "op"}, {"LOWER": "dit"}, {"LOWER": "echo"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "afwijkingen"}, {"LOWER": "op"}, {"LOWER": "dit"}, {"LOWER": "echo"}]}
+{"label": "lv_dil_present", "pattern": [{"TEXT": {"REGEX": "^(Gedilat(at)?eerde?|Dilatatie)"}}, {"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}]}
+{"label": "lv_dil_present", "pattern": [{"TEXT": {"REGEX": "^(Gedilat(at)?eerde?|Dilatatie)"}}, {"TEXT": {"REGEX": "linker|L\\.V"}}, {"TEXT": {"REGEX": "ventrikel"}}]}
+{"label": "lv_dil_present", "pattern": [{"TEXT": {"REGEX": "^[Ll](inker|\\.)?[Vv]|kamer"}}, {"TEXT": {"REGEX": "^(gedilat(at)?eerde?|dilatatie)"}}]}
+{"label": "lv_dil_present", "pattern": [{"LOWER": "dilatatie"}, {"LOWER": "van"}, {"LOWER": "de"}, {"LOWER": "lv"}]}
+{"label": "lv_dil_present", "pattern": [{"LOWER": "alle"}, {"LOWER": "compartimenten"}, {"LOWER": "gedilateerd"}]}
+{"label": "lv_dil_present", "pattern": [{"LOWER": "lv"}, {"LOWER": "is"}, {"LOWER": "gedilateerd"}]}
