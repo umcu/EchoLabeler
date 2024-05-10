@@ -1,6 +1,6 @@
 import benedict
-import json
-import os, sys, re
+from tqdm import tqdm
+import re
 from gensim.models import Word2Vec, Doc2Vec, FastText
 from sentence_transformers import SentenceTransformer, util as st_util
 from typing import Dict, List, Tuple, Union, Callable
@@ -18,7 +18,7 @@ class deabber():
     def __init__(self,
                  model_type: str='sbert',
                  model: str='FremyCompany/BioLORD-2023-M',
-                 abbreviations: Union[Dict[List[str]], str]=None,
+                 abbreviations: Union[Dict[str, List[str]], str] = None,
                  min_sim: float=0.5,
                  top_k: int=7):
         self.model_type = model_type
@@ -30,6 +30,10 @@ class deabber():
             self.abbreviations = benedict.benedict.from_yaml(abbreviations)
         else:
             self.abbreviations = abbreviations
+
+        print("Initializing model...")
+        self._initialise()
+
 
     def Likelihood(self, probeString: str):
         """Get log-likelihood of a string using a pre-trained model such as BERT or Llama"""
@@ -121,8 +125,8 @@ class deabber():
 
     def deabb(self,
                 docs: List[str],
-                abbreviations: Dict[List]=None,
-                TokenRadius: int = 3):
+                abbreviations: Dict[str,List[str]]=None,
+                TokenRadius: int = 3)->List[str]:
         """Deabbreviate text
 
         Args:
@@ -138,7 +142,7 @@ class deabber():
             assert (len(abbreviations) > 0), "No abbreviations are given, please give as a parameter or set as attribute"
 
         TEXT_deabbreviated = []
-        for line in docs:
+        for line in tqdm(docs):
             # TODO: remove leading and trailing \b
             # line = re.sub(pattern=r'^\b(.*)\b$', repl='\1', string=line)
 

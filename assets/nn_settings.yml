@@ -19,7 +19,6 @@ bigru:
   batch_size: 128
   UseClassWeights: False
   LR: 0.005
-  dilation: 4
   num_layers: 96
   lemmatize: True
   lowercase: False
