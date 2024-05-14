@@ -1,7 +1,14 @@
 # add autoreload
 import numpy as np
-from typing import Callable, List
+from typing import Callable, List, Union, Literal
 import spacy
+from gensim.models import Word2Vec as W2V, keyedvectors as KV, Doc2Vec, FastText
+import dotenv
+import os
+import re
+
+ENV = dotenv.load_env('../.env')
+EMB_PATH  = os.environ['word_embeddings']
 
 def report_filter(texts: List[str],
                   Tokenizer: Callable = None,
@@ -51,22 +58,63 @@ def report_filter(texts: List[str],
         filtered_texts.append(text)
     return filtered_texts, suspect_texts
 
-def text_to_vectors(texts, maxlen):
+def text_to_vectors(texts: List[str]=None,
+                    maxlen: int=200, 
+                    source: Literal['spacy', 'cardio']='spacy',
+                    how: Literal['fasttext', 'sbert']='fasttext',
+                    padmethod: Literal['zero', 'random', 'mean']='mean', 
+                    window: int=3):
     '''
+    # TODO: add option for other embeddings
+    # TODO: for padding don't use zero vector but random or mean vector
     :param texts: texts to embed, list of strings
     :param maxlen: max length, in tokens, of the texts
     :return: array of arrays
     '''
-    nlp = spacy.load("nl_core_news_lg", disable=['parser', 'ner'])
+    if source == 'spacy':
+        nlp = spacy.load("nl_core_news_lg", disable=['parser', 'ner'])
+        _docs = nlp.pipe(texts)
+        # We truncate or pad the document vector to a fixed size
+        array_list = []
+        for doc in _docs:
+            vectors = [token.vector for token in doc]
+            mwv = np.mean(vectors, axis=0)
+            
+            if len(vectors) > maxlen:
+                vectors = vectors[:maxlen]
+            elif len(vectors) < max_len:
+                if padmethod == 'zero':
+                    vectors += [np.zeros((nlp.vocab.vectors_length,))] * (maxlen - len(vectors))
+                elif padmethod == 'random':
+                    vectors += [np.random.rand(nlp.vocab.vectors_length)] * (maxlen - len(vectors))
+                elif padmethod == 'mean':
+                    vectors += [mwv] * (maxlen - len(vectors))
+                
+            array_list.append(np.array(vectors))
+    elif source == 'cardio':
+        if how == 'fasttext':
+            wvs = FastText.load(os.path.join(EMB_PATH, 'cardio_sg.model'))
+            vocab_size = len(wvs.wv.vectors_vocab.shape[0])
+        # go through documents
+        array_list = []
+        splitter = re.compile(r'[^\w]')
+        for txt in texts:
+            words = splitter.split(txt)    
+            vectors = []
+            for k in range(maxlen)
+                vectors.append(wvs.wv[words[k]])
+                
+            mwv = np.mean(vectors, axis=0)            
+            
+            if len(vectors) < max_len:
+                if padmethod == 'zero':
+                    vectors += [np.zeros((vocab_size,))] * (maxlen - len(vectors))
+                elif padmethod == 'random':
+                    vectors += [np.random.rand(vocab_size)] * (maxlen - len(vectors))
+                elif padmethod == 'mean':
+                    vectors += [mwv] * (maxlen - len(vectors)) 
+            
+            array_list.append(np.array(vectors))    
+            # if word not in vocab, take closest one according to Levenhstein or mean of surrounding tokens
 
-    _docs = nlp.pipe(texts)
-    # We truncate or pad the document vector to a fixed size
-    array_list = []
-    for doc in _docs:
-        vectors = [token.vector for token in doc]
-        if len(vectors) > maxlen:
-            vectors = vectors[:maxlen]
-        elif len(vectors) < max_len:
-            vectors += [np.zeros((nlp.vocab.vectors_length,))] * (maxlen - len(vectors))
-        array_list.append(np.array(vectors))
     return np.array(array_list)
