@@ -49,7 +49,7 @@ def CurrentModel(modelselection: Literal['bigru', 'bilstm', 'cnn', 'hstacked_dcn
     # TODO: combination of TextCNN with varying dilations
     # TODO: make vstacked dilated CNN
     # TODO: test Attention
-    if modelselection not in ['textcnn', 'cnn', 'bilstm']:
+    if modelselection not in ['textcnn', 'cnn', 'bilstm', 'vstacked_dcnn']:
         model = Sequential()
 
     if pre_embeddingdim is None:
@@ -169,13 +169,23 @@ def CurrentModel(modelselection: Literal['bigru', 'bilstm', 'cnn', 'hstacked_dcn
     elif modelselection == 'vstacked_dcnn':
         # CNN with multiple dilations; 1,2,4,8 stacked, before going into the final layer
         # basic cnn with one dilation
-        if pre_trained_vectors:
-            model.add(layers.Conv1D(num_layers, 5, activation = 'relu', dilation_rate = dilations[0], input_shape = (maxlen, embeddingdim), name=f'conv_dil1'))
-        else:
-            model.add(layers.Embedding(vocabsize, embeddingdim, input_length = maxlen, name='EmbeddingLayer'))
-        # TODO: add logic for vstacking
-        model.add(layers.Conv1D(num_layers//4, 5, activation = 'relu', dilation_rate = 1))
-        model.add(layers.GlobalMaxPooling1D(name='GlobalMaxPooling'))    
+        inputs = layers.Input(shape=(maxlen,), name='InputData', dtype='int32')
+        embs = layers.Embedding(vocabsize, embeddingdim, input_length = maxlen, name='EmbeddingLayer', trainable=True)(inputs)
+        Flows = []
+        for k in [1,2,4,8]:
+            DilLayer = layers.Conv1D(num_layers, 5, activation = 'relu', dilation_rate = k, name=f'ConvDilation{k}')(embs)
+            DilLayer = layers.GlobalMaxPooling1D(name=f'GlobalMaxPooling{k}')(DilLayer)
+            Flows.append(DilLayer)
+        concat = layers.concatenate(Flows, axis=-1)
+        dropout_layer = layers.Dropout(dropout,  name='dropout')(concat)
+        dense1_layer = layers.Dense(num_dense, activation = 'relu', name='Dense1')(dropout_layer)
+        output_layer = layers.Dense(numclasses, activation = finalact, name='Dense2')(dense1_layer)
+        model = Model(inputs=inputs, outputs=output_layer)
+        model.compile(optimizer = optimizers.Adam(learning_rate=learningrate),
+                      loss = lossfunction,
+                      metrics = [accuracy])
+        return model        
+             
     ##################################################################################################    
     elif modelselection == 'textcnn':
         # also see: https://github.com/ShaneTian/TextCNN/blob/master/text_cnn.py and https://arxiv.org/abs/1408.5882
