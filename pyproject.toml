@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "echolabeler"
+version = "0.1.0"
+description = "Code to perform work for Echolabeling paper"
+authors = ["Bram van Es, Bauke Arends"]
+license = "GPL3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+matplotlib = "^3.9.0"
+scikit-learn = "^1.5.0"
+scikit-lego = "^0.8.2"
+evaluate = "^0.4.2"
+python-benedict = "^0.33.2"
+python-dotenv = "^1.0.1"
+pandas = "^2.2.2"
+seaborn = "^0.13.2"
+keras = "^3.3.1"
+spacy = "^3.7.4"
+clinlp = "^0.7.0"
+regex = "^2024.5.15"
+gensim = "^4.3.2"
+torch = { version = "2.3.0", source="torch"}
+torchaudio = { version = "2.3.0", source="torch"}
+torchvision = { version = "0.18.0", source="torch"}
+torchinfo = "^1.8.0"
+transformers = "^4.30.0"
+setfit = "^1.0.3"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "supplemental"
