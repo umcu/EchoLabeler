@@ -1,5 +1,9 @@
 # add autoreload
 import numpy as np
+import scipy as sc
+from scipy import sparse
+
+
 from typing import Callable, List, Union, Literal
 import spacy
 from gensim.models import Word2Vec as W2V, keyedvectors as KV
@@ -7,6 +11,8 @@ from gensim.models import Doc2Vec, fasttext
 import os
 import re
 from tqdm import tqdm
+
+from sentence_transformers import SentenceTransformer
 
 def report_filter(texts: List[str],
                   Tokenizer: Callable = None,
@@ -88,7 +94,21 @@ class TextToVectors():
             self.nlp = spacy.load("nl_core_news_lg", disable=['parser', 'ner'])
             self.emb_dim = self.nlp.vocab.vectors_length
             self.vocab_size = self.nlp.vocab.vectors.n_keys
-
+            
+    def vector_aggregation_LIL(self, texts: List[str], 
+                           agg_method: Literal['mean', 'tfidf']='mean',
+                           tokenizer: Callable = None,
+                           tfidf_matrix: sc.sparse.spmatrix=None)->np.ndarray:
+        # TODO: if source in ['cardio_wv', 'cardio_sb'] -> use Phraser.
+        VectorArray = self.text_to_vectors(texts)
+    
+        if agg_method == 'mean':            
+            return VectorArray.mean(axis=1)         
+        elif agg_method == 'tfidf':
+            print("Not available yet, continuing with mean aggregation")
+            #return VectorArray.average(axis=1, weights=None)
+            return VectorArray.mean(axis=1) 
+       
     def text_to_vectors(self, texts: List[str]=None):
         '''
         # TODO: add option for other embeddings
@@ -103,7 +123,7 @@ class TextToVectors():
             _docs = self.nlp.pipe(texts)
             # We truncate or pad the document vector to a fixed size
             array_list = []
-            for doc in tqdm(_docs, disable=~self.use_progress_bar):
+            for doc in tqdm(_docs, disable=(not self.use_progress_bar)):
                 vectors = [token.vector for token in doc]
                 mwv = np.mean(vectors, axis=0)
                 
@@ -122,7 +142,7 @@ class TextToVectors():
             # go through documents
             array_list = []
             splitter = re.compile(r'[^\w]')
-            for txt in tqdm(texts, disable=~self.use_progress_bar):
+            for txt in tqdm(texts, disable=(not self.use_progress_bar)):
                 words = splitter.split(txt)    
                 vectors = []
                 for k in range(self.maxlen):
@@ -151,3 +171,34 @@ class TextToVectors():
             pass
         return np.array(array_list)
     
+def ETM(tfidf_matrix, lda_theta, lda_beta):
+    # beta_{k,j} : probability of word j, given topic k
+    # theta_{i,k}: probability of topic k, given document i
+    # tfidf_matrix
+    
+    # Get Gamma_i for all documents
+    num_topics = lda_theta.shape[1]
+    AverageSentenceLength = np.mean(np.sum(tfidf_matrix>0, axis=1))
+    gammas=AverageSentenceLength/np.array(np.sum(tfidf_matrix>0, axis=1))[:,0]
+    # replace inf-gammas with 0
+    gammas[np.where(np.isinf(gammas))]=0
+    
+    # prep omega
+    indices = tfidf_matrix.indices
+    indptr = tfidf_matrix.indptr
+    z = []
+    
+    for d,row in enumerate(tfidf_matrix):
+        idcs = row.indices
+        for w in idcs:
+            omega = 0
+            for k in range(num_topics):
+                omega = omega + gammas[d]*lda_theta[d,k]*lda_beta[k, w]
+            z.append(omega)
+    omega_sparse = sparse.csr_matrix((z, indices, indptr), 
+                                     shape=tfidf_matrix.shape)
+    return tfidf_matrix + omega_sparse
+    
+def SALT(tfidf_matrix, cluster_object=None):
+    # https://github.com/bagheria/saltclass/blob/master/saltclass/saltclass.py
+    pass
