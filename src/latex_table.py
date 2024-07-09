@@ -8,7 +8,7 @@ import numpy as np
 
 standard_cleaning = lambda x: x.strip("(").strip(")")
 
-def _parse_value_line(Line: str=None,  GroupSize: int=None, TextColNum: int=0):
+def _parse_value_line(Line: str=None,  GroupSize: int=None, TextColNum: int=0) -> str:
     Line = Line.replace("\\\\", "")
     Elements = Line.split("&")
     ColName = Elements[0]

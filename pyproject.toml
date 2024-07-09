@@ -18,7 +18,7 @@ pandas = "^2.2.2"
 seaborn = "^0.13.2"
 spacy = "^3.7.4"
 clinlp = "^0.7.0"
-regex = "^2024.5.15"
+regex = "^2022.9.13"
 gensim = "^4.3.2"
 torch = { version = "2.3.0", source="torch"}
 torchaudio = { version = "2.3.0", source="torch"}
