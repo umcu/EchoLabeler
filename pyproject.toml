@@ -17,9 +17,7 @@ python-dotenv = "^1.0.1"
 pandas = "^2.2.2"
 seaborn = "^0.13.2"
 spacy = "^3.7.4"
-deduce  = ">=3.0.2"
 #clinlp = ">=0.8.0"
-regex = ">=2022.9.13"
 gensim = "^4.3.2"
 torch = { version = "2.3.0", source="torch"}
 torchaudio = { version = "2.3.0", source="torch"}
