@@ -19,3 +19,8 @@ to perform document classification.
 * MedRoBERTa.nl
 
 
+
+# fixes:
+the current toml will not directly work.
+* in gensim/matutils.py -> change ```from scipy.linalg import triu``` to ```from numpy import triu```
+* 
