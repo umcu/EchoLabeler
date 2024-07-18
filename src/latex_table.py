@@ -40,7 +40,7 @@ def _parse_value_line(Line: str=None,  GroupSize: int=None, TextColNum: int=0) -
             else:
                 v2Str = str(v2)      
             
-            vStr = v1Str + "(" + v2Str + ")"
+            vStr = v1Str + " (" + v2Str + ")"
             
             OutStr += vStr + "&"
     OutStr = OutStr.strip("&") + "\\\\"
@@ -87,13 +87,13 @@ if __name__ ==  "__main__" :
     # add argument parser
     ArgParse = argparse.ArgumentParser(description="Basic arg parser")
     ArgParse.add_argument("-i", "--input", type=str, required=True, dest="text_file_to_parse")
-    ArgParse.add_argument("-o", "--output", type=str, required=True, dest="output_file")
+    ArgParse.add_argument("-o", "--output", type=str, required=False, default="latex_table_out.txt", dest="output_file")
     ArgParse.add_argument("-t", "--type", type=str, choices=["boldface"], dest="parse_type", required=False, default="boldface")
     
     text_file_to_parse = ArgParse.parse_args().text_file_to_parse
     output_file = ArgParse.parse_args().output_file
     parse_type = ArgParse.parse_args().parse_type
     
-    FirstTabStr = 'diastolic dysfunction'
+    FirstTabStr = 'aortic regurgitation'
     GroupSize = 3
     parse_table(Path=text_file_to_parse, OutPath=output_file, parse_type=parse_type, FirstTabStr=FirstTabStr, GroupSize=GroupSize)
