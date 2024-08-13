@@ -1,5 +1,3 @@
-{"label": "pe_severe", "pattern": [{"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
-{"label": "pe_severe", "pattern": [{"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "spoor", "spoortje"]}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
 {"label": "pe_not_present", "pattern": [{"TEXT": {"REGEX": "[Ss]poor"}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
 {"label": "pe_not_present", "pattern": [{"TEXT": {"REGEX": "[Ss]poor"}}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
 {"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}]}
@@ -8,3 +6,17 @@
 {"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
 {"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
 {"label": "pe_not_present", "pattern": [{"LOWER": "geen"}, {"TEXT": {"REGEX": "aanwijz"}}, {}, {"TEXT": {"REGEX": "^[Pp](ericard|\\.)?$"}}, {"TEXT": {"REGEX": "^([Ee](ffusie)?|vocht)$"}}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "schilletje"}, {"LOWER": "pe"}]}
+{"label": "pe_not_present", "pattern": [{"LOWER": "schilletje"}, {"LOWER": "pericardeffusie"}]}
+{"label": "pe", "pattern": [{"LOWER": "rand"}, {"LOWER": "pericardeffusie"}]}
+{"label": "pe", "pattern": [{"LOWER": "randje"}, {"LOWER": "pericardeffusie"}]}
+{"label": "pe", "pattern": [{"LOWER": "enig"}, {"LOWER": "pericardeffusie"}]}
+{"label": "pe", "pattern": [{"LOWER": "weinig"}, {"LOWER": "pericardeffusie"}]}
+{"label": "pe", "pattern": [{"LOWER": "rand"}, {"LOWER": "pe"}]}
+{"label": "pe", "pattern": [{"LOWER": "randje"}, {"LOWER": "pe"}]}
+{"label": "pe", "pattern": [{"LOWER": "enig"}, {"LOWER": "pe"}]}
+{"label": "pe", "pattern": [{"LOWER": "weinig"}, {"LOWER": "pe"}]}
+{"label": "pe_severe", "pattern": [{"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}, "OP": "*"}, {"TEXT": {"REGEX": "^[2-9]\\,?[0-9]?$"}}, {"TEXT": {"REGEX": "^[Cc][Mm]$"}}]}
+{"label": "pe_severe", "pattern": [{"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}, "OP": "*"}, {"TEXT": {"REGEX": "^[2-9]\\,?[0-9]?[Cc][Mm]$"}}]}
+{"label": "pe_severe", "pattern": [{"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}, "OP": "*"}, {"TEXT": {"REGEX": "^[2-9][0-9]$"}}, {"TEXT": {"REGEX": "^[Mm][Mm]$"}}]}
+{"label": "pe_severe", "pattern": [{"TEXT": {"REGEX": "^[Pp](ericard|\\.)?([Ee](ffusie)?|vocht)$"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}, "OP": "*"}, {"TEXT": {"REGEX": "^[2-9][0-9][Mm][Mm]$"}}]}

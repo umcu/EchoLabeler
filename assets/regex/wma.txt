@@ -1,38 +1,38 @@
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Ww]andbew"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Ww]and"}}, {"TEXT": {"REGEX": "bew"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {}, {"TEXT": {"REGEX": "[Cc]ontra[ck]tie"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Ww]andbew"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Ww]and"}}, {"TEXT": {"REGEX": "bew"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {}, {"TEXT": {"REGEX": "[Cc]ontra[ck]tie"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^(?![Gg]lobale)[^.]*$"}}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]eenzonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww]andbew"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww]and"}}, {"TEXT": {"REGEX": "bew"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Cc]ontra[ck]tie"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^(?![Gg]lobale)[^.]*$"}}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww]andbew"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Ww]and"}}, {"TEXT": {"REGEX": "bew"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "^[^.]*$"}}, {"TEXT": {"REGEX": "[Cc]ontra[ck]tie"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "^(?![Gg]lobale)[^.]*$"}}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
 {"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Ww]andbew"}}]}
 {"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Ww]and"}}, {"TEXT": {"REGEX": "bew"}}]}
 {"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {}, {"TEXT": {"REGEX": "[Cc]ontra[ck]tie"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Ww]andbew"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}},{"TEXT": {"REGEX": "[Ww]and"}}, {"TEXT": {"REGEX": "bew"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Cc]ontra[ck]tie"}}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "[Nn]orma(al|le)"}}, {"LOWER": "echocardiogram"}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "[Nn]orma(al|le)"}}, {"LOWER": "echo"}]}
-{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "[Nn]orma(al|le)"}}, {"LOWER": "bevindingen"}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "[Aa]kine"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "[Ww]\\.?[Mm]\\.?[Aa]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "([Gg]een|zonder)"}}, {"TEXT": {"REGEX": "[Ww][Bb][Ss]"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "^([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Ww]andbew"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "^([Gg]een|[Nn]ormale|zonder)"}},{"TEXT": {"REGEX": "[Ww]and"}}, {"TEXT": {"REGEX": "bew"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "^([Gg]een|[Nn]ormale|zonder)"}}, {"TEXT": {"REGEX": "[Cc]ontra[ck]tie"}}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "^[Nn]orma(al|le)"}}, {"LOWER": "echocardiogram"}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "^[Nn]orma(al|le)"}}, {"LOWER": "echo"}]}
+{"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "^[Nn]orma(al|le)"}}, {"LOWER": "bevindingen"}]}
 {"label": "wma_not_present", "pattern": [{"LOWER": "bevindingen"}, {"TEXT": {"REGEX": "norma(al|le)"}}]}
 {"label": "wma_not_present", "pattern": [{"LOWER": "bevindingen"}, {}, {"TEXT": {"REGEX": "norma(al|le)"}}]}
 {"label": "wma_not_present", "pattern": [{"LOWER": "geen"}, {}, {"LOWER": "bevindingen"}]}
@@ -44,6 +44,15 @@
 {"label": "wma_not_present", "pattern": [{"LOWER": "geen"}, {}, {"LOWER": "regionale"}, {"LOWER": "verschillen"}]}
 {"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "[Ww]andbeweging"}}, {"TEXT": {"REGEX": "norma(al|le)"}}]}
 {"label": "wma_not_present", "pattern": [{"TEXT": {"REGEX": "[Ww]andbeweging"}}, {}, {"TEXT": {"REGEX": "norma(al|le)"}}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "normaal"}, {"LOWER": "echocardiogram"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "overig"}, {"LOWER": "normale"}, {"LOWER": "bevindingen"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "overig"}, {"LOWER": "geen"}, {"LOWER": "afwijkingen"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "overige"}, {"LOWER": "bevindingen"}, {"LOWER": "normaal"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "overige"}, {"LOWER": "bevindingen"}, {"LOWER": "zijn"}, {"LOWER": "normaal"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "overige"}, {"LOWER": "dimensies"}, {"LOWER": "en"}, {"LOWER": "functies"}, {"LOWER": "normaal"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "geen"}, {"LOWER": "duidelijke"}, {"LOWER": "afwijkingen"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "normale"}, {"LOWER": "bevindingen"}]}
+{"label": "wma_not_present", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "geen"}, {"LOWER": "afwijkende"}, {"LOWER": "bevindingen"}]}
 {"label": "wma_present", "pattern": [{"LOWER": "zie"}, {"TEXT": {"REGEX": "[Ss]chema|[Ss][Cc][Oo][Rr][Ee]|[Ff]iguur"}}]}
 {"label": "wma_present", "pattern": [{"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"TEXT": {"REGEX": "[Hh]ypokine"}}]}
 {"label": "wma_present", "pattern": [{"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"LOWER": {"NOT_IN": ["geen", "uitspraak", "zonder", "niet", "afwezigheid"]}}, {"TEXT": {"REGEX": "[Dd]yskine"}}]}

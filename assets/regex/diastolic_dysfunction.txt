@@ -1,5 +1,9 @@
 {"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Rr]estr"}}, {"TEXT": {"REGEX": "diast"}}]}
-{"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "diast"}}, {"TEXT": {"REGEX": "[Rr]estr"}}]}
+{"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Rr]estr"}}, {"TEXT": {"REGEX": "vulling|instroom|inflow"}}]}
+{"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "restr"}}]}
+{"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"LOWER": "functie"}, {}, {"TEXT": {"REGEX": "restr"}}]}
+{"label": "lv_dias_func_severe", "pattern": [{"LOWER": "diastolische"}, {"LOWER": "parameters"}, {"LOWER": "passend"}, {"LOWER": "bij"}, {"LOWER": "restrictie"}]}
+{"label": "lv_dias_func_severe", "pattern": [{"LOWER": "diastolisch"}, {"LOWER": "ernstig"}, {"LOWER": "restrictieve"}, {"LOWER": "stoornis"}]}
 {"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {"TEXT": {"REGEX": "^([Ii][Ii]-|2-)?([Ii][Ii][Ii]|3|[Ii][Vv]|4)(?=\\/)?"}}]}
 {"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "d[yi]s"}}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {"TEXT": {"REGEX": "^([Ii][Ii]-|2-)?([Ii][Ii][Ii]|3|[Ii][Vv]|4)(?=\\/)?"}}]}
 {"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "d[yi]s"}}, {}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {}, {"TEXT": {"REGEX": "^([Ii][Ii]-|2-)?([Ii][Ii][Ii]|3|[Ii][Vv]|4)(?=\\/)?"}}]}
@@ -16,7 +20,8 @@
 {"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"TEXT": {"REGEX": "d[yi]s"}}, {}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^(Ii][Ii][Ii]|3|[Ii][Vv]|4)(?=\\/)?"}}]}
 {"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"TEXT": {"REGEX": "d[yi]s"}}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^(Ii][Ii][Ii]|3|[Ii][Vv]|4)(?=\\/)?"}}]}
 {"label": "lv_dias_func_severe", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "d[yi]s"}}, {"TEXT": {"REGEX": "^([Ii][Ii]-|2-)?([Ii][Ii][Ii]|3|[Ii][Vv]|4)(?=\\/)?"}}]}
-{"label": "lv_dias_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Pp]seudon"}}]}
+{"label": "lv_dias_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Pp]seudo-?n"}}]}
+{"label": "lv_dias_func_moderate", "pattern": [{"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {"TEXT": {"REGEX": "^([Ii]a?-|1-)?([Ii][Ii]|2)(?![iI])(\\.)?(?=\\/)?"}}, {"TEXT": {"REGEX": "[Dd]iast"}}]}
 {"label": "lv_dias_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {"TEXT": {"REGEX": "^([Ii]a?-|1-)?([Ii][Ii]|2)(?![iI])(\\.)?(?=\\/)?"}}]}
 {"label": "lv_dias_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "d[yi]s"}}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {"TEXT": {"REGEX": "^([Ii]a?-|1-)?([Ii][Ii]|2)(?![iI])(\\.)?(?=\\/)?"}}]}
 {"label": "lv_dias_func_moderate", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "d[yi]s"}}, {}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {}, {"TEXT": {"REGEX": "^([Ii]a?-|1-)?([Ii][Ii]|2)(?![iI])(\\.)?(?=\\/)?"}}]}
@@ -44,15 +49,37 @@
 {"label": "lv_dias_func_mild", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"TEXT": {"REGEX": "d[yi]s"}}, {}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {"TEXT": {"REGEX": "^([Ii](?![iIvV])|1)"}}]}
 {"label": "lv_dias_func_mild", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"TEXT": {"REGEX": "d[yi]s"}}, {"TEXT": {"REGEX": "^([Gg]r|[Tt]ype)"}}, {"TEXT": {"REGEX": "^([Ii](?![iIvV])|1)"}}]}
 {"label": "lv_dias_func_mild", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "d[yi]s"}}, {"TEXT": {"REGEX": "^([Ii](?![iIvV])|1)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "([Nn]orma(al|el|l)|goed)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "(norma(al|el|l)|goed)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "(norma(al|el|l)|goed)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "(norma(al|el|l)|goed)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "([Nn]orma(al|le|el|l)|[Gg]oede?)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "(norma(al|le|el|l)|[Gg]oede?)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "(norma(al|le|el|l)|[Gg]oede?)"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"TEXT": {"REGEX": "([Nn]orma(al|le|el|l)|[Gg]oede?)"}}, {"LOWER": "functie"}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]orma(al|le|el|l)|[Gg]oede?|[Gg]een)"}}, {"TEXT": {"REGEX": "[Dd]iast"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]orma(al|le|el|l)|[Gg]oede?|[Gg]een)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "[Dd]iast"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]orma(al|le|el|l)|[Gg]oede?|[Gg]een)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "[Dd]iast"}}]}
-{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "([Nn]orma(al|le|el|l)|[Gg]oede?|[Gg]een)"}}, {"LOWER": "syst"}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {}, {"TEXT": {"REGEX": "[Dd]iast"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^([Nn]orma(al|el|l)|goed)"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^(norma(al|el|l)|goed)"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^(norma(al|el|l)|goed)"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"LOWER": "functie"}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^(norma(al|el|l)|goed)"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "^([Nn]orma(al|le|el|l)|[Gg]oede?)"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "^(?!niet$|\\.)[a-z]+$"}}, {"TEXT": {"REGEX": "^(norma(al|le|el|l)|[Gg]oede?)"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {"TEXT": {"REGEX": "^(?!niet$|\\.)[a-z]+$"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^(norma(al|le|el|l)|[Gg]oede?)"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "[Dd]iast"}}, {}, {"TEXT": {"REGEX": "^([Nn]orma(al|le|el|l)|[Gg]oede?)"}}, {"LOWER": "functie"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "^([Nn]orma(al|le|el|l)|[Gg]oede?|[Gg]een)"}}, {"TEXT": {"REGEX": "diast"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "^([Nn]orma(al|le|el|l)|[Gg]oede?)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "diast"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "^([Nn]orma(al|le|el|l)|[Gg]oede?)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {"TEXT": {"REGEX": "diast"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"TEXT": {"REGEX": "^([Nn]orma(al|le|el|l)|[Gg]oede?|[Gg]een)"}}, {"LOWER": "syst"}, {"TEXT": {"REGEX": "^([a-z]|\\.)"}}, {}, {"TEXT": {"REGEX": "diast"}}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "echo"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "normaal"}, {"LOWER": "echocardiogram"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "echocardiogram"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "normaal"}, {"LOWER": "echo"}, {"LOWER": "cardiogram"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "overig"}, {"LOWER": "normale"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "overig"}, {"LOWER": "geen"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "afwijkende"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "belangrijke"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "echo"}, {"LOWER": "geen"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "overige"}, {"LOWER": "bevindingen"}, {"LOWER": "normaal"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "overige"}, {"LOWER": "bevindingen"}, {"LOWER": "zijn"}, {"LOWER": "normaal"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "overige"}, {"LOWER": "dimensies"}, {"LOWER": "en"}, {"LOWER": "functies"}, {"LOWER": "normaal"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "duidelijke"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "evidente"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "functionele"}, {"LOWER": "beperkingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "normale"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "geen"}, {"LOWER": "afwijkende"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "geen"}, {"LOWER": "abnormale"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "echocardiografisch"}, {"LOWER": "geen"}, {"LOWER": "afwijkingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "normale"}, {"LOWER": "echocardiografische"}, {"LOWER": "bevindingen"}]}
+{"label": "lv_dias_func_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "cardiale"}, {"LOWER": "afwijkingen"}, {"LOWER": "gezien"}, {"LOWER": "op"}, {"LOWER": "dit"}, {"LOWER": "echo"}]}
+{"label": "lv_dil_normal", "pattern": [{"LOWER": "geen"}, {"LOWER": "afwijkingen"}, {"LOWER": "op"}, {"LOWER": "dit"}, {"LOWER": "echo"}]}
