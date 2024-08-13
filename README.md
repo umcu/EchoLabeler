@@ -12,7 +12,7 @@ to perform document classification.
 
 **Document labelling**
 * BOW, using TF-IDF, latent Dirichlet allocation, and topic modelling enrichment, followed by a standard gradient-boosted classifier.
-* SetFit using RobBERT
+* SetFit using RobBERTv2
 * MedRoBERTa.nl
 * biGRU
 * CNN
